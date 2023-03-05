@@ -1,0 +1,2 @@
+accelerate launch train.py --pretrained_model_name_or_path "/ssd/zhaohanqing/msws/diffusers/examples/model_lab/chilloutmix" --images_dir /public/zhaohanqing/dataset/ffhq/ --lr_scheduler constant_with_warmup \
+ --train_batch_size 5 --resolution 512  --scale_lr  --output_dir chillout_train_ffhq --num_train_epochs 10 --save_steps 10000 --learning_rate 1.6e-6 --lr_scheduler cosine_with_restarts --reg_weight 0.01 --lora_rank 64 --placeholder_token face

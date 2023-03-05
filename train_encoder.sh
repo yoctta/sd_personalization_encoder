@@ -1,0 +1,2 @@
+accelerate launch train.py --pretrained_model_name_or_path "stabilityai/stable-diffusion-2-1" --images_dir /public/zhaohanqing/dataset/ffhq/ --lr_scheduler constant_with_warmup \
+ --train_batch_size 1 --resolution 768  --scale_lr  --output_dir new_train_ffhq --num_train_epochs 10 --save_steps 5000 --resume_from_checkpoint new_train_ffhq/checkpoint-115000

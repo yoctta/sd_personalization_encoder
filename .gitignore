@@ -1,0 +1,11 @@
+# Initially taken from Github's Python gitignore file
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+amlt/
+# C extensions
+*.so
+
+*_train_ffhq/*
