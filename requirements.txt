@@ -1,0 +1,10 @@
+accelerate==0.16.0
+diffusers==0.13.1
+numpy==1.21.5
+open_clip_torch==2.9.3
+packaging==21.3
+Pillow==9.4.0
+torch==1.13.1
+torchvision==0.14.1
+tqdm==4.63.1
+transformers==4.25.1
