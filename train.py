@@ -307,7 +307,7 @@ def main():
             resume_step = resume_global_step % (num_update_steps_per_epoch * args.gradient_accumulation_steps)
     
     torch.cuda.empty_cache()
-    accelerator.free_memory()
+    #accelerator.free_memory()
     # We need to initialize the trackers we use, and also store our configuration.
     # The trackers initializes automatically on the main process.
     if accelerator.is_main_process:
