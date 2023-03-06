@@ -9,3 +9,4 @@ amlt/
 *.so
 
 *_train_ffhq/*
+temp/
