@@ -17,12 +17,12 @@ accelerate launch train.py --pretrained_model_name_or_path "runwayml/stable-diff
 ```bash
 accelerate config
 accelerate launch --multi_gpu sample.py --pretrained_model_name_or_path "runwayml/stable-diffusion-v1-5" \
-  --model_path "$MODEL_SAVE_DIR/checkpoint-300000" \
+  --model_path "$MODEL_SAVE_DIR/checkpoint-70000" --final_checkpoint \
   --image_path $INPUT_IMAGE_PATH \
   --train_batch_size 2 \
   --finetune_steps 15 --reg_weight 0.1 --resolution 512 \
-  --prompt "a pencil sketch of face." "an oil paint of face."  --placeholder_token face \
-  --num_samples 2 --learning_rate 1.6e-6  --train_text_encoder --mixed_precision bf16 \
+  --prompt "a photo of face wearing sunglasses."   --placeholder_token face \
+  --num_samples 2 --learning_rate 1.6e-5  --train_text_encoder --mixed_precision bf16 \
   --output_dir $OUTPUT_IMAGE_PATH
 
 ```
