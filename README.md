@@ -13,6 +13,8 @@ accelerate config
 accelerate launch train.py --pretrained_model_name_or_path "runwayml/stable-diffusion-v1-5" --images_dir $FFHQ_DIR --lr_scheduler constant_with_warmup \
  --train_batch_size 5 --resolution 512  --scale_lr  --output_dir $MODEL_SAVE_DIR --num_train_epochs 10 --save_steps 10000 --learning_rate 1.6e-6 --lr_scheduler cosine_with_restarts --reg_weight 0.01 --lora_rank 64 --placeholder_token face
 ```
+
+pretrained model is available at https://huggingface.co/yoctta/sd-personalization-encoder-face/tree/main
 ## Finetune and sample images
 ```bash
 accelerate config
@@ -26,3 +28,5 @@ accelerate launch --multi_gpu sample.py --pretrained_model_name_or_path "runwaym
   --output_dir $OUTPUT_IMAGE_PATH
 
 ```
+## Sampled Images
+ ![Image 1](images/asuka.png)
