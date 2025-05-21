@@ -30,3 +30,4 @@ accelerate launch --multi_gpu sample.py --pretrained_model_name_or_path "runwaym
 ```
 ## Sampled Images
  ![Image 1](images/asuka.png)
+Testing file modification.
